@@ -4,7 +4,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: url("capetown.jpeg");
+    background: #222;
+    background-image: url("https://source.unsplash.com/3840x2160/?landscape");
     font-family: 'Open Sans', sans-serif;
     font-size: 120%;
 }
@@ -55,4 +56,32 @@ input.search-bar {
 
 button:hover {
     background: #7c7c7c6b
+}
+
+h1.temp {
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    text-transform: capitalize;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading::after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
 }
